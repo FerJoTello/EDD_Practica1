@@ -174,16 +174,6 @@ Inicio::Inicio(ListaCircular *listaArchivos)
     {
         exit(0);
     }
-
-    /*
-        //colores y atributos
-        attron(A_BOLD);
-        printw("letrita");
-        attroff(A_BOLD);
-        refresh();
-
-        getch();
-        */
 }
 
 #endif // INICIO_H

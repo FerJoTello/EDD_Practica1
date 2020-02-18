@@ -42,7 +42,6 @@ public:
         WINDOW *workSpace = newwin(height - 3, width - 2, startY + 1, startX + 1);
         //Permite el scroll en una ventana cuando se llega al borde de la misma.
         //scrollok(workSpace, true);
-        /* EMPIEZA EL VERGUEO */
         keypad(workSpace, true);
 
         //Variables enteras a utilizar.
@@ -146,14 +145,6 @@ public:
                 }
                 wrefresh(workSpace);
             }
-            /*Si es un enter
-            else if (tecla == 10)
-            {
-                posX = 0;
-                posY++;
-                rowMax++;
-            }
-            */
             //Si son flechas.
             else if (tecla >= 258 && tecla <= 261)
             {
@@ -227,22 +218,6 @@ public:
                         posX = 0;
                         posY = 0;
                     }
-                    /*
-                    //Si la posicion no es igual al columnMax
-                    if (posX < columnMax)
-                    {
-                        //Aumenta la posicion en X
-                        posX++;
-                        //Y si es igual
-                        if (posX == columnMax)
-                        {
-                            //Coloca el cursor en una nueva linea
-                            posX = 0;
-                            posY++;
-                            rowMax++;
-                        }
-                    }
-                    */
                 }
             }
             //Si es backspace (borrar).
