@@ -1,8 +1,0 @@
-digraph ReporteArchivos{
-rankdir=LR;
-node [shape=record fontname=Arial];
-var0 [label="CadaVezMas.txt\lCadaVezMas.txt\l"];
-var1 [label="Cabeza2.txt\lCabeza2.txt\l"];
-var2 [label="Algo2..txt\lAlgo2..txt\l"];
-var0 -> var1 -> var2 ->  var0;
-}
